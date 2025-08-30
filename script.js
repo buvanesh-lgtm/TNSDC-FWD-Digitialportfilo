@@ -1,3 +1,11 @@
+//Toggle mobile menu
+const menuToggle = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
+
+menuToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("show");
+});
+
 // Smooth scroll
 document.querySelectorAll("a[href^='#']").forEach(link => {
   link.addEventListener("click", e => {
@@ -25,4 +33,5 @@ document.querySelector(".contact-form").addEventListener("submit", function(e) {
   setTimeout(() => {
     successMsg.style.display = "none";
   }, 3000);
+
 });
